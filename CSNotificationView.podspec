@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/problame/CSNotificationView"
   s.license      = { :type => 'MIT License', :file => "LICENSE.md" }
   s.author       = 'Christian Schwarz'
-  s.source       = { :git => 'https://github.com/problame/CSNotificationView.git', :tag => '0.3' }
+  s.source       = { :git => 'https://github.com/SandorUK/CSNotificationView.git', :tag => '0.3' }
   s.platform     = :ios, '7.0'
   s.requires_arc = true
   s.source_files = 'CSNotificationView/*.*'
