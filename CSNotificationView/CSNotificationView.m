@@ -36,6 +36,7 @@ static NSInteger const kCSNotificationViewEmptySymbolViewTag = 666;
          tintColor:(UIColor*)tintColor
              image:(UIImage*)image
            message:(NSString*)message
+            font:(UIFont*)font
           duration:(NSTimeInterval)duration
 {
     NSAssert(message, @"'message' must not be nil.");
@@ -44,6 +45,7 @@ static NSInteger const kCSNotificationViewEmptySymbolViewTag = 666;
     note.tintColor = tintColor;
     note.image = image;
     note.textLabel.text = message;
+    [note.textLabel setFont:font];
     
     void (^completion)() = ^{[note setVisible:NO animated:YES completion:nil];};
     [note setVisible:YES animated:YES completion:^{
