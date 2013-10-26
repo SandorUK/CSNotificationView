@@ -33,10 +33,12 @@ typedef enum {
 
 #pragma mark + creators
 
-+ (CSNotificationView*)notificationViewWithParentViewController:(UIViewController*)viewController
-                                                      tintColor:(UIColor*)tintColor
-                                                          image:(UIImage*)image
-                                                        message:(NSString*)message;
++(void)showInViewController:(UIViewController*)viewController
+                  tintColor:(UIColor*)tintColor
+                      image:(UIImage*)image
+                    message:(NSString*)message
+                       font:(UIFont*)font
+                   duration:(NSTimeInterval)duration;
 
 #pragma mark - initialization
 
